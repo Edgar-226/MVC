@@ -8,6 +8,7 @@ const loginView = require('./back/view/loginView')
 
 
 const app = express();
+
 app.use(express.json())
 app.use(cors())
 
@@ -33,7 +34,7 @@ async function serverStart() {
 serverStart();
 
 
-
+//Iniciamos vistas
 productsView(app)
 homeview(app)
 loginView(app)
